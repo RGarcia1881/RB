@@ -5,8 +5,7 @@ function Navbar() {
   const [activeLink, setActiveLink] = useState("HOME");
   const [isOpen, setIsOpen] = useState(false);
   const { language, setLanguage } = useLanguage();
-
-  const labels = {
+  const labels: Record<"en" | "es", string[]> = {
     en: ["HOME", "ABOUT", "SERVICES", "RESUME", "WORK", "CONTACT"],
     es: [
       "INICIO",
@@ -19,7 +18,7 @@ function Navbar() {
   };
 
   const sectionIds = ["home", "about", "services", "resume", "work", "contact"];
-  const translatedLinks = labels[language];
+  const translatedLinks = labels[language as "en" | "es"];
 
   useEffect(() => {
     const handleObserver = (entries: IntersectionObserverEntry[]) => {

@@ -2,10 +2,11 @@ import { useEffect, useRef, useState } from "react";
 
 type AnimatedSectionProps = {
   id: string;
+  className?: string;
   children: React.ReactNode;
 };
 
-function AnimatedSection({ id, children }: AnimatedSectionProps) {
+function AnimatedSection({ id, children, className }: AnimatedSectionProps) {
   const ref = useRef<HTMLElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -30,9 +31,9 @@ function AnimatedSection({ id, children }: AnimatedSectionProps) {
     <section
       ref={ref}
       id={id}
-      className={`w-full relative px-6 py-10 section-hidden ${
+      className={`min-h-screen px-6 py-16 section-hidden ${
         isVisible ? "section-visible" : ""
-      }`}
+      } ${className ?? ""}`}
     >
       {children}
     </section>
