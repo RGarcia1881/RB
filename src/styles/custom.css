@@ -1,0 +1,64 @@
+@layer base {
+  :root {
+    --color-primary: #363636;
+    --color-secondary: #959595;
+    --color-accent: #cd0000;
+
+    --font-abel: "Abel", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    color: var(--color-primary);
+  }
+
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+
+  .border-secondary {
+    border-color: var(--color-secondary);
+  }
+
+  .border-secondary-services {
+    border-color: rgba(149, 149, 149, 0.5);
+  }
+
+  .text-accent {
+    color: var(--color-accent);
+  }
+
+  .font-abel {
+    font-family: var(--font-abel);
+  }
+
+  .font-roboto {
+    font-family: var(--font-roboto);
+  }
+
+  .hover\:text-primary:hover {
+    color: var(--color-primary);
+  }
+
+  .hover\:text-accent:hover {
+    color: var(--color-accent);
+  }
+
+  .hover\:border-primary:hover {
+    border-color: var(--color-primary);
+  }
+
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+}
