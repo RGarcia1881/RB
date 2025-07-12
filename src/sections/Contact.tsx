@@ -127,7 +127,7 @@ function Contact({ language }: Props) {
             <i className="bx bxl-instagram"></i>
           </a>
           <a
-            href="https://www.linkedin.com/in/raúl-garcía-858b20264/"
+            href="https://www.linkedin.com/in/raúl-bautista-858b20264/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-secondary hover:text-accent transition-colors duration-300"

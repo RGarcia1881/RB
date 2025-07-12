@@ -13,7 +13,7 @@ function MainApp() {
   const { language } = useLanguage();
   const [showSplash, setShowSplash] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
-  const [fade, setFade] = useState(false); // 🔸 nuevo estado para transición
+  const [fade, setFade] = useState(false); // Nuevo estado para transición
 
   useEffect(() => {
     const fadeTimer = setTimeout(() => setFadeOut(true), 2000);
@@ -24,7 +24,7 @@ function MainApp() {
     };
   }, []);
 
-  // 🔸 efecto que aplica transición cuando cambia el idioma
+  // Efecto que aplica transición cuando cambia el idioma
   useEffect(() => {
     setFade(true);
     const timer = setTimeout(() => setFade(false), 300);
