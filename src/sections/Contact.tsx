@@ -90,7 +90,7 @@ function Contact({ language }: Props) {
         <a
           href={cvFile}
           download
-          className="text-secondary text-center hover:text-accent text-sm transition-colors duration-300"
+          className="text-accent text-center hover:text-accent text-sm transition-colors duration-300"
         >
           {t.download}
         </a>
